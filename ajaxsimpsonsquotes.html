@@ -1,0 +1,25 @@
+<script>
+	function fetchSimpsonsJSON() {
+	   const simpsonsQuotes = 0;
+	   const url = `https://simpsons-quotes-api.herokuapp.com/quotes/${simpsonsQuotes}`;
+	   axios.get(url)
+		 .then(function(response) {
+		  return response.data; 
+		 })
+		.then(function(simpsons) {
+		  console.log([data][0]);
+  
+		  const pokemonHtml = `
+			<p><strong>${simpsons.name.avatar.quotes}</strong></p>
+			<img src="${simpsons-quotes-api.image}" />
+		  `;
+		   document.querySelector('#simpsons-quotes').innerHTML = simpsons-quotesHtml;
+		});
+	}
+  
+	 fetchSimpsonsJSON();
+
+</script>
+
+</body>
+</html>
